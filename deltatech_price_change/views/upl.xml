@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+   <data>
+       <record id="view_product_change_price_inherit" model="ir.ui.view">
+           <field name="name">product.price.change.inherit</field>
+           <field name="model">product.price.change</field>
+           <field name="inherit_id" ref="deltatech_price_change.view_product_change_price"/>
+           <field name="arch" type="xml">
+               <xpath expr="//tree" position="attributes">
+                   <attribute name="js_class">button_in_pc</attribute>
+               </xpath>
+           </field>
+       </record>
+   </data>
+</odoo>
