@@ -195,6 +195,7 @@ class ProductPriceChangeLine(models.Model):
 
     quantity = fields.Float(
         "Quantity",
+         related="product_id.qty_available",
         digits="Product Unit of Measure",
         compute="_compute_quantity",
         store=True,
